@@ -1,0 +1,56 @@
+/*common css*/
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, form, input, textarea, p, th, td, img {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 40px;
+}
+
+body {
+    background-color: #f2f2f2;
+    outline: 0;
+    line-height: 1.5;
+    color: #666;
+    font-family: "Hiragino Sans GB","Microsoft YaHei",Helvetica,Arial,sans-serif;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.h4, .h5, .h6, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, button, input, select, textarea {
+    font-family: "Hiragino Sans GB","Microsoft YaHei",Helvetica,Arial,sans-serif;
+}

@@ -1,1 +1,32 @@
-<p>这是导航</p>
+<ion-header-bar class="ionic-header">
+    <div>
+        <a href=""></a>
+        <div class="header-nav">
+            <ul>
+                <li ui-sref-active="active"><a ui-sref="table"><i></i>桌台</a></li>
+                <li ui-sref-active="active"><a ui-sref="order"><i></i>点菜</a></li>
+                <li ui-sref-active="active"><a ui-sref="pay"><i></i>结账</a></li>
+                <li ui-sref-active="active"><a ui-sref="meals"><i></i>送餐</a></li>
+                <li ui-sref-active="active"><a ui-sref="indent"><i></i>订单</a></li>
+                <li ui-sref-active="active"><a ui-sref="statistical"><i></i>统计</a></li>
+            </ul>
+            <div>
+                <i class="refresh"></i>
+                <i class="setting" ng-click="changeMenuStatus()"></i>
+            </div>
+        </div>
+        <div class="header-dropdown" ng-if="isShow">
+            <div></div>
+            <ul>
+                <li><a href="">餐桌设置</a></li>
+                <li><a href="">一键清台</a></li>
+                <li><a href="">交班</a></li>
+                <li><a href="">交换门店</a></li>
+                <li><a href="">付款设置</a></li>
+                <li><a href="">快捷键设置</a></li>
+                <li><a href="">帮助中心</a></li>
+            </ul>
+            <span><i></i>退出</span>
+        </div>
+    </div>
+</ion-header-bar>

@@ -1,3 +1,113 @@
+@import url(base.css);
+html {
+  font-size: 16px; }
 
+.bar-header {
+  top: 0;
+  border-top-width: 0;
+  border-bottom-width: 1px; }
+
+.bar {
+  height: 60px !important;
+  border: none !important;
+  background-color: #1e2737 !important;
+  background-size: 0;
+  padding: 0 !important; }
+
+.ionic-header {
+  background: #1e2737;
+  height: 60px; }
+  .ionic-header > div {
+    width: 100%; }
+    .ionic-header > div > a {
+      display: inline-block;
+      float: left;
+      vertical-align: top;
+      width: 6.25rem !important;
+      height: 3.75rem !important;
+      background: url("../images/logo.png") no-repeat;
+      background-size: 6.25rem 3.75rem; }
+    .ionic-header > div .header-nav {
+      height: 3.75rem;
+      width: calc(100% - 100px);
+      display: inline-block; }
+      .ionic-header > div .header-nav ul {
+        width: 41.875rem;
+        display: inline-block;
+        padding: 8px; }
+        .ionic-header > div .header-nav ul li {
+          float: left;
+          width: 6.75rem;
+          height: 2.75rem;
+          text-align: center;
+          line-height: 2.75rem; }
+          .ionic-header > div .header-nav ul li i {
+            width: 1.5rem;
+            height: 1.5rem;
+            display: inline-block;
+            vertical-align: sub;
+            margin-right: 10px; }
+          .ionic-header > div .header-nav ul li a {
+            font-size: 0.9375rem;
+            color: #78829d; }
+          .ionic-header > div .header-nav ul li:nth-child(1) i {
+            background: url("../images/HeaderNavIcon-table.png") no-repeat;
+            background-size: cover; }
+          .ionic-header > div .header-nav ul li:nth-child(1).active i {
+            background: url("../images/HeaderNavIconHover-table.png") no-repeat;
+            background-size: cover; }
+          .ionic-header > div .header-nav ul li:nth-child(2) i {
+            background: url("../images/HeaderNavIcon-menu.png") no-repeat;
+            background-size: cover; }
+          .ionic-header > div .header-nav ul li:nth-child(2).active i {
+            background: url("../images/HeaderNavIconHover-menu.png") no-repeat;
+            background-size: cover; }
+          .ionic-header > div .header-nav ul li:nth-child(3) i {
+            background: url("../images/HeaderNavIcon-table.png") no-repeat;
+            background-size: cover; }
+          .ionic-header > div .header-nav ul li:nth-child(3).active i {
+            background: url("../images/HeaderNavIconHover-checkout.png") no-repeat;
+            background-size: cover; }
+          .ionic-header > div .header-nav ul li:nth-child(4) i {
+            background: url("../images/HeaderNavIcon-car.png") no-repeat;
+            background-size: cover; }
+          .ionic-header > div .header-nav ul li:nth-child(4).active i {
+            background: url("../images/HeaderNavIcon-car1.png") no-repeat;
+            background-size: cover; }
+          .ionic-header > div .header-nav ul li:nth-child(5) i {
+            background: url("../images/HeaderNavIcon-statistice.png") no-repeat;
+            background-size: cover; }
+          .ionic-header > div .header-nav ul li:nth-child(5).active i {
+            background: url("../images/HeaderNavIconHover-statistice.png") no-repeat;
+            background-size: cover; }
+          .ionic-header > div .header-nav ul li:nth-child(6) i {
+            background: url("../images/HeaderNavIcon-statistice.png") no-repeat;
+            background-size: cover; }
+          .ionic-header > div .header-nav ul li:nth-child(6).active i {
+            background: url("../images/HeaderNavIconHover-statistice.png") no-repeat;
+            background-size: cover; }
+      .ionic-header > div .header-nav > div {
+        display: inline-block;
+        float: right; }
+        .ionic-header > div .header-nav > div i {
+          display: inline-block; }
+        .ionic-header > div .header-nav > div .refresh {
+          width: 3rem;
+          height: 3.75rem;
+          background: url("../images/new.png") no-repeat center center;
+          background-size: 1.75rem 1.75rem; }
+        .ionic-header > div .header-nav > div .setting {
+          width: 3.75rem;
+          height: 3.75rem;
+          background: url("../images/HeaderDropdownIcon.png") no-repeat;
+          background-size: 100%; }
+    .ionic-header > div .header-dropdown {
+      position: absolute;
+      top: 3.75rem;
+      right: 0;
+      width: 240px;
+      font-size: 0.9375rem;
+      background: #5b6d98;
+      border-radius: 0 0 4px 4px; }
 
 /*# sourceMappingURL=main.css.map */
