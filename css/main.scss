@@ -85,7 +85,7 @@ html{
           }
           &:nth-child(3){
             i{
-              background: url('../images/HeaderNavIcon-table.png') no-repeat;
+              background: url('../images/HeaderNavIcon-checkout.png') no-repeat;
               background-size: cover;
             }
             &.active{
@@ -131,6 +131,16 @@ html{
               }
             }
           }
+          &.active{
+            background: #29324a;
+            border: 1px solid #1c202b;
+            box-shadow: inset 0 0 1px #606980;
+            border-radius: 6px;
+            box-sizing: border-box;
+            a{
+              color: #fff;
+            }
+          }
         }
       }
       >div{
@@ -148,7 +158,7 @@ html{
         .setting{
           width:toRem(60px);
           height:toRem(60px);
-          background: url('../images/HeaderDropdownIcon.png') no-repeat;
+          background-image: url('../images/HeaderDropdownIcon.png');
           background-size: 100%;
         }
       }
@@ -162,8 +172,147 @@ html{
       background: #5b6d98;
       border-radius: 0 0 4px 4px;
       >div{
-
+        width:toRem(240px);
+        height:toRem(117px);
+        padding: toRem(20px) toRem(20px) 0 toRem(20px);
+        border-bottom: 1px solid #566790;
+        >div{
+          i{
+            display: inline-block;
+            width:toRem(50px);
+            height:toRem(50px);
+            background: url('../images/AvatarBg.png') no-repeat;
+            background-size: toRem(50px) toRem(50px);
+            margin-right:toRem(10px);
+          }
+          >div{
+            display: inline-block;
+            vertical-align: top;
+            p{
+              color:#b2c1e6;
+              &:nth-child(1){
+                font-size:toRem(14px);
+                //margin-bottom: toRem(10px);
+              }
+              &:nth-child(2){
+                font-size:toRem(18px);
+                margin-bottom:toRem(10px);
+              }
+            }
+          }
+        }
+        >p{
+          color:#b2c1e6;
+          font-size: 14px;
+          span{
+            float: right;
+          }
+        }
+      }
+      ul{
+        height:toRem(240px);
+        li{
+          float:left;
+          width:toRem(120px);
+          height:toRem(60px);
+          text-align: center;
+          a{
+            display: inline-block;
+            font-size: toRem(15px);
+            color:#fff;
+            margin-top: toRem(18px);
+          }
+          &:hover{
+            background:#1e2737;
+          }
+        }
+      }
+      >span{
+        border-top: 1px solid #566790;
+        display: block !important;
+        height:toRem(60px);
+        width:toRem(240px);
+        color:#fff;
+        font-size: toRem(16px);
+        //line-height: toRem(60px);
+        padding-top: toRem(16px);
+        i{
+          display: inline-block;
+          vertical-align:top;
+          width:toRem(28px);
+          height:toRem(28px);
+          background: url('../images/exit.png');
+          background-size: toRem(28px) toRem(28px);
+          margin: 0 toRem(10px) 0 toRem(85px);
+        }
+        &:hover{
+          background: #1e2737;
+        }
       }
     }
   }
+}
+
+
+.ionic-content{
+  margin-top: toRem(60px);
+}
+
+//table
+.table-nav{
+  height:toRem(60px);
+  border-bottom: 1px solid #ebebeb;
+  ul{
+    margin-left: toRem(30px);
+    li{
+      float: left;
+      height:toRem(59px);
+      width:toRem(120px);
+      border-bottom: 2px solid transparent;
+      a{
+        display: inline-block;
+        height:100%;
+        text-align: center;
+        width:100%;
+        line-height:toRem(59px);
+        font-size: toRem(16px);
+        color:#666;
+        span{
+          padding: 0 10px;
+          color:#333;
+          font-size: toRem(10px);
+          height:toRem(20px);
+          border-radius: toRem(4px);
+          margin-right:toRem(5px);
+        }
+      }
+      &.active{
+        a{
+          color:#297ef8;
+        }
+        border-bottom: 2px solid #297ef8;
+      }
+      &:nth-child(2){
+        span{
+          border: 1px dashed #e2e2e2;
+          background-color: #fff;
+        }
+      }
+      &:nth-child(3){
+        span{
+          border: 1px dashed #69a2ff;
+          background-color: #e1ecff;
+        }
+      }
+      &:nth-child(4){
+        span{
+          border: 1px dashed #69a2ff;
+          background: #fff;
+        }
+      }
+    }
+  }
+}
+.table-content{
+
 }

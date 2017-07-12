@@ -63,7 +63,7 @@ html {
             background: url("../images/HeaderNavIconHover-menu.png") no-repeat;
             background-size: cover; }
           .ionic-header > div .header-nav ul li:nth-child(3) i {
-            background: url("../images/HeaderNavIcon-table.png") no-repeat;
+            background: url("../images/HeaderNavIcon-checkout.png") no-repeat;
             background-size: cover; }
           .ionic-header > div .header-nav ul li:nth-child(3).active i {
             background: url("../images/HeaderNavIconHover-checkout.png") no-repeat;
@@ -86,6 +86,14 @@ html {
           .ionic-header > div .header-nav ul li:nth-child(6).active i {
             background: url("../images/HeaderNavIconHover-statistice.png") no-repeat;
             background-size: cover; }
+          .ionic-header > div .header-nav ul li.active {
+            background: #29324a;
+            border: 1px solid #1c202b;
+            box-shadow: inset 0 0 1px #606980;
+            border-radius: 6px;
+            box-sizing: border-box; }
+            .ionic-header > div .header-nav ul li.active a {
+              color: #fff; }
       .ionic-header > div .header-nav > div {
         display: inline-block;
         float: right; }
@@ -99,7 +107,7 @@ html {
         .ionic-header > div .header-nav > div .setting {
           width: 3.75rem;
           height: 3.75rem;
-          background: url("../images/HeaderDropdownIcon.png") no-repeat;
+          background-image: url("../images/HeaderDropdownIcon.png");
           background-size: 100%; }
     .ionic-header > div .header-dropdown {
       position: absolute;
@@ -109,5 +117,106 @@ html {
       font-size: 0.9375rem;
       background: #5b6d98;
       border-radius: 0 0 4px 4px; }
+      .ionic-header > div .header-dropdown > div {
+        width: 15rem;
+        height: 7.3125rem;
+        padding: 1.25rem 1.25rem 0 1.25rem;
+        border-bottom: 1px solid #566790; }
+        .ionic-header > div .header-dropdown > div > div i {
+          display: inline-block;
+          width: 3.125rem;
+          height: 3.125rem;
+          background: url("../images/AvatarBg.png") no-repeat;
+          background-size: 3.125rem 3.125rem;
+          margin-right: 0.625rem; }
+        .ionic-header > div .header-dropdown > div > div > div {
+          display: inline-block;
+          vertical-align: top; }
+          .ionic-header > div .header-dropdown > div > div > div p {
+            color: #b2c1e6; }
+            .ionic-header > div .header-dropdown > div > div > div p:nth-child(1) {
+              font-size: 0.875rem; }
+            .ionic-header > div .header-dropdown > div > div > div p:nth-child(2) {
+              font-size: 1.125rem;
+              margin-bottom: 0.625rem; }
+        .ionic-header > div .header-dropdown > div > p {
+          color: #b2c1e6;
+          font-size: 14px; }
+          .ionic-header > div .header-dropdown > div > p span {
+            float: right; }
+      .ionic-header > div .header-dropdown ul {
+        height: 15rem; }
+        .ionic-header > div .header-dropdown ul li {
+          float: left;
+          width: 7.5rem;
+          height: 3.75rem;
+          text-align: center; }
+          .ionic-header > div .header-dropdown ul li a {
+            display: inline-block;
+            font-size: 0.9375rem;
+            color: #fff;
+            margin-top: 1.125rem; }
+          .ionic-header > div .header-dropdown ul li:hover {
+            background: #1e2737; }
+      .ionic-header > div .header-dropdown > span {
+        border-top: 1px solid #566790;
+        display: block !important;
+        height: 3.75rem;
+        width: 15rem;
+        color: #fff;
+        font-size: 1rem;
+        padding-top: 1rem; }
+        .ionic-header > div .header-dropdown > span i {
+          display: inline-block;
+          vertical-align: top;
+          width: 1.75rem;
+          height: 1.75rem;
+          background: url("../images/exit.png");
+          background-size: 1.75rem 1.75rem;
+          margin: 0 0.625rem 0 5.3125rem; }
+        .ionic-header > div .header-dropdown > span:hover {
+          background: #1e2737; }
+
+.ionic-content {
+  margin-top: 3.75rem; }
+
+.table-nav {
+  height: 3.75rem;
+  border-bottom: 1px solid #ebebeb; }
+  .table-nav ul {
+    margin-left: 1.875rem; }
+    .table-nav ul li {
+      float: left;
+      height: 3.6875rem;
+      width: 7.5rem;
+      border-bottom: 2px solid transparent; }
+      .table-nav ul li a {
+        display: inline-block;
+        height: 100%;
+        text-align: center;
+        width: 100%;
+        line-height: 3.6875rem;
+        font-size: 1rem;
+        color: #666; }
+        .table-nav ul li a span {
+          padding: 0 10px;
+          color: #333;
+          font-size: 0.625rem;
+          height: 1.25rem;
+          border-radius: 0.25rem;
+          margin-right: 0.3125rem; }
+      .table-nav ul li.active {
+        border-bottom: 2px solid #297ef8; }
+        .table-nav ul li.active a {
+          color: #297ef8; }
+      .table-nav ul li:nth-child(2) span {
+        border: 1px dashed #e2e2e2;
+        background-color: #fff; }
+      .table-nav ul li:nth-child(3) span {
+        border: 1px dashed #69a2ff;
+        background-color: #e1ecff; }
+      .table-nav ul li:nth-child(4) span {
+        border: 1px dashed #69a2ff;
+        background: #fff; }
 
 /*# sourceMappingURL=main.css.map */
