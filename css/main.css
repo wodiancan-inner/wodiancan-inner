@@ -7,6 +7,9 @@
 html {
   font-size: 16px; }
 
+.scroll-content {
+  margin-top: 60px; }
+
 .bar-header {
   top: 0;
   border-top-width: 0;
@@ -114,5 +117,7 @@ html {
       font-size: 0.9375rem;
       background: #5b6d98;
       border-radius: 0 0 4px 4px; }
+
+/* 点菜 */
 
 /*# sourceMappingURL=main.css.map */
