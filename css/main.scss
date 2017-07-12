@@ -1,7 +1,13 @@
-@import "base.css";
+@charset "utf-8";
+@import "base.css";         // 初始化
+@import "common/variable";  // 公共变量
+
 $default-font-size: 16px !default;
 html{
   font-size: $default-font-size;
+}
+.scroll-content{
+  margin-top: $navH;
 }
 @function toRem($px){
  @return ($px/$default-font-size)*1rem;
@@ -316,3 +322,4 @@ html{
 .table-content{
 
 }
+
