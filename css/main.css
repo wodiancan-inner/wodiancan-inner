@@ -1,41 +1,230 @@
-/*
-Error: Invalid CSS after "...dc65b71403450a7": expected "{", was ""
-        on line 330 of main.scss
-
-325: }
-326: =======
-327: 
-328: /* 点菜 *\/
-329: >>>>>>> 8753eaf3e6fe625d4c7e88958dc65b71403450a7
-
-Backtrace:
-main.scss:330
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:665:in `block'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin.rb:82:in `update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/bin/scss:13:in `<top (required)>'
-C:/Ruby23-x64/bin/scss:22:in `load'
-C:/Ruby23-x64/bin/scss:22:in `<main>'
+@charset "UTF-8";
+@import url(base.css);
+/**
+*  公共变量
+*
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...dc65b71403450a7\": expected \"{\", was \"\"\A         on line 330 of main.scss\A \A 325: }\A 326: =======\A 327: \A 328: /* 点菜 */\A 329: >>>>>>> 8753eaf3e6fe625d4c7e88958dc65b71403450a7"; }
+html {
+  font-size: 16px; }
+
+.scroll-content {
+  margin-top: 60px; }
+
+.bar-header {
+  top: 0;
+  border-top-width: 0;
+  border-bottom-width: 1px; }
+
+.bar {
+  height: 60px !important;
+  border: none !important;
+  background-color: #1e2737 !important;
+  background-size: 0;
+  padding: 0 !important; }
+
+.ionic-header {
+  background: #1e2737;
+  height: 60px; }
+  .ionic-header > div {
+    width: 100%; }
+    .ionic-header > div > a {
+      display: inline-block;
+      float: left;
+      vertical-align: top;
+      width: 6.25rem !important;
+      height: 3.75rem !important;
+      background: url("../images/logo.png") no-repeat;
+      background-size: 6.25rem 3.75rem; }
+    .ionic-header > div .header-nav {
+      height: 3.75rem;
+      width: calc(100% - 100px);
+      display: inline-block; }
+      .ionic-header > div .header-nav ul {
+        width: 41.875rem;
+        display: inline-block;
+        padding: 8px; }
+        .ionic-header > div .header-nav ul li {
+          float: left;
+          width: 6.75rem;
+          height: 2.75rem;
+          text-align: center;
+          line-height: 2.75rem; }
+          .ionic-header > div .header-nav ul li i {
+            width: 1.5rem;
+            height: 1.5rem;
+            display: inline-block;
+            vertical-align: sub;
+            margin-right: 10px; }
+          .ionic-header > div .header-nav ul li a {
+            font-size: 0.9375rem;
+            color: #78829d; }
+          .ionic-header > div .header-nav ul li:nth-child(1) i {
+            background: url("../images/HeaderNavIcon-table.png") no-repeat;
+            background-size: cover; }
+          .ionic-header > div .header-nav ul li:nth-child(1).active i {
+            background: url("../images/HeaderNavIconHover-table.png") no-repeat;
+            background-size: cover; }
+          .ionic-header > div .header-nav ul li:nth-child(2) i {
+            background: url("../images/HeaderNavIcon-menu.png") no-repeat;
+            background-size: cover; }
+          .ionic-header > div .header-nav ul li:nth-child(2).active i {
+            background: url("../images/HeaderNavIconHover-menu.png") no-repeat;
+            background-size: cover; }
+          .ionic-header > div .header-nav ul li:nth-child(3) i {
+            background: url("../images/HeaderNavIcon-checkout.png") no-repeat;
+            background-size: cover; }
+          .ionic-header > div .header-nav ul li:nth-child(3).active i {
+            background: url("../images/HeaderNavIconHover-checkout.png") no-repeat;
+            background-size: cover; }
+          .ionic-header > div .header-nav ul li:nth-child(4) i {
+            background: url("../images/HeaderNavIcon-car.png") no-repeat;
+            background-size: cover; }
+          .ionic-header > div .header-nav ul li:nth-child(4).active i {
+            background: url("../images/HeaderNavIcon-car1.png") no-repeat;
+            background-size: cover; }
+          .ionic-header > div .header-nav ul li:nth-child(5) i {
+            background: url("../images/HeaderNavIcon-statistice.png") no-repeat;
+            background-size: cover; }
+          .ionic-header > div .header-nav ul li:nth-child(5).active i {
+            background: url("../images/HeaderNavIconHover-statistice.png") no-repeat;
+            background-size: cover; }
+          .ionic-header > div .header-nav ul li:nth-child(6) i {
+            background: url("../images/HeaderNavIcon-statistice.png") no-repeat;
+            background-size: cover; }
+          .ionic-header > div .header-nav ul li:nth-child(6).active i {
+            background: url("../images/HeaderNavIconHover-statistice.png") no-repeat;
+            background-size: cover; }
+          .ionic-header > div .header-nav ul li.active {
+            background: #29324a;
+            border: 1px solid #1c202b;
+            box-shadow: inset 0 0 1px #606980;
+            border-radius: 6px;
+            box-sizing: border-box; }
+            .ionic-header > div .header-nav ul li.active a {
+              color: #fff; }
+      .ionic-header > div .header-nav > div {
+        display: inline-block;
+        float: right; }
+        .ionic-header > div .header-nav > div i {
+          display: inline-block; }
+        .ionic-header > div .header-nav > div .refresh {
+          width: 3rem;
+          height: 3.75rem;
+          background: url("../images/new.png") no-repeat center center;
+          background-size: 1.75rem 1.75rem; }
+        .ionic-header > div .header-nav > div .setting {
+          width: 3.75rem;
+          height: 3.75rem;
+          background-image: url("../images/HeaderDropdownIcon.png");
+          background-size: 100%; }
+    .ionic-header > div .header-dropdown {
+      position: absolute;
+      top: 3.75rem;
+      right: 0;
+      width: 240px;
+      font-size: 0.9375rem;
+      background: #5b6d98;
+      border-radius: 0 0 4px 4px; }
+      .ionic-header > div .header-dropdown > div {
+        width: 15rem;
+        height: 7.3125rem;
+        padding: 1.25rem 1.25rem 0 1.25rem;
+        border-bottom: 1px solid #566790; }
+        .ionic-header > div .header-dropdown > div > div i {
+          display: inline-block;
+          width: 3.125rem;
+          height: 3.125rem;
+          background: url("../images/AvatarBg.png") no-repeat;
+          background-size: 3.125rem 3.125rem;
+          margin-right: 0.625rem; }
+        .ionic-header > div .header-dropdown > div > div > div {
+          display: inline-block;
+          vertical-align: top; }
+          .ionic-header > div .header-dropdown > div > div > div p {
+            color: #b2c1e6; }
+            .ionic-header > div .header-dropdown > div > div > div p:nth-child(1) {
+              font-size: 0.875rem; }
+            .ionic-header > div .header-dropdown > div > div > div p:nth-child(2) {
+              font-size: 1.125rem;
+              margin-bottom: 0.625rem; }
+        .ionic-header > div .header-dropdown > div > p {
+          color: #b2c1e6;
+          font-size: 14px; }
+          .ionic-header > div .header-dropdown > div > p span {
+            float: right; }
+      .ionic-header > div .header-dropdown ul {
+        height: 15rem; }
+        .ionic-header > div .header-dropdown ul li {
+          float: left;
+          width: 7.5rem;
+          height: 3.75rem;
+          text-align: center; }
+          .ionic-header > div .header-dropdown ul li a {
+            display: inline-block;
+            font-size: 0.9375rem;
+            color: #fff;
+            margin-top: 1.125rem; }
+          .ionic-header > div .header-dropdown ul li:hover {
+            background: #1e2737; }
+      .ionic-header > div .header-dropdown > span {
+        border-top: 1px solid #566790;
+        display: block !important;
+        height: 3.75rem;
+        width: 15rem;
+        color: #fff;
+        font-size: 1rem;
+        padding-top: 1rem; }
+        .ionic-header > div .header-dropdown > span i {
+          display: inline-block;
+          vertical-align: top;
+          width: 1.75rem;
+          height: 1.75rem;
+          background: url("../images/exit.png");
+          background-size: 1.75rem 1.75rem;
+          margin: 0 0.625rem 0 5.3125rem; }
+        .ionic-header > div .header-dropdown > span:hover {
+          background: #1e2737; }
+
+.ionic-content {
+  margin-top: 3.75rem; }
+
+.table-nav {
+  height: 3.75rem;
+  border-bottom: 1px solid #ebebeb; }
+  .table-nav ul {
+    margin-left: 1.875rem; }
+    .table-nav ul li {
+      float: left;
+      height: 3.6875rem;
+      width: 7.5rem;
+      border-bottom: 2px solid transparent; }
+      .table-nav ul li a {
+        display: inline-block;
+        height: 100%;
+        text-align: center;
+        width: 100%;
+        line-height: 3.6875rem;
+        font-size: 1rem;
+        color: #666; }
+        .table-nav ul li a span {
+          padding: 0 10px;
+          color: #333;
+          font-size: 0.625rem;
+          height: 1.25rem;
+          border-radius: 0.25rem;
+          margin-right: 0.3125rem; }
+      .table-nav ul li.active {
+        border-bottom: 2px solid #297ef8; }
+        .table-nav ul li.active a {
+          color: #297ef8; }
+      .table-nav ul li:nth-child(2) span {
+        border: 1px dashed #e2e2e2;
+        background-color: #fff; }
+      .table-nav ul li:nth-child(3) span {
+        border: 1px dashed #69a2ff;
+        background-color: #e1ecff; }
+      .table-nav ul li:nth-child(4) span {
+        border: 1px dashed #69a2ff;
+        background: #fff; }
+
+/*# sourceMappingURL=main.css.map */
