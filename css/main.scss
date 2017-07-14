@@ -12,6 +12,10 @@ html{
 @function toRem($px){
  @return ($px/$default-font-size)*1rem;
 }
+//esp
+.esp{
+  display: none;
+}
 //nav
 .bar-header {
   top: 0;
@@ -334,6 +338,112 @@ html{
       margin-left: 30px;
       margin-bottom: 30px;
     }
+  }
+}
+
+
+//setting
+.setting-nav{
+  width:100%;
+  >nav{
+    width:toRem(200px);
+    background: #eef1f7;
+    color:#444c63;
+    border-right:#dee0e0 solid 1px;
+    display: inline-block;
+    vertical-align: top;
+    h1{
+      background:#2879ff;
+      color:#fff;
+      font-size:toRem(20px);
+      cursor: pointer;
+      height:toRem(60px);
+      line-height: toRem(60px);
+      padding-left:toRem(18px);
+    }
+    ul{
+      li{
+        height:toRem(60px);
+        line-height: toRem(60px);
+        font-size: toRem(16px);
+        padding-left: toRem(18px);
+        i{
+          display: inline-block;
+          vertical-align: middle;
+          width:toRem(18px);
+          height:toRem(18px);
+          margin-right: toRem(15px);
+        }
+        &:nth-child(1){
+          i{
+            background: url('../images/all-table.png') no-repeat;
+            background-size: cover;
+          }
+          &.active{
+            i{
+              background: url('../images/all-table1.png') no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+        &:nth-child(2){
+          i{
+            background: url('../images/add-manyTable.png') no-repeat;
+            background-size: cover;
+          }
+          &.active{
+            i{
+              background: url('../images/add-manyTable1.png') no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+        &:nth-child(3){
+          i{
+            background: url('../images/TableQrCode.png') no-repeat;
+            background-size: cover;
+          }
+          &.active{
+            i{
+              background: url('../images/TableQrCodeHover.png') no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+        &:nth-child(4){
+          i{
+            background: url('../images/TableType.png') no-repeat;
+            background-size: cover;
+          }
+          &.active{
+            i{
+              background: url('../images/TableTypeHover.png') no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+        &:nth-child(5){
+          i{
+            background: url('../images/PayQrCode.png') no-repeat;
+            background-size: cover;
+          }
+          &.active{
+            i{
+              background: url('../images/PayQrCodeHover.png') no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+        &.active{
+          background:#fff;
+          color:#2879ff;
+        }
+      }
+    }
+  }
+  >div{
+    width:calc(100% - #{toRem(200px)});
+    float: right;
   }
 }
 
