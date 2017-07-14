@@ -42,4 +42,9 @@ angular.module('myApp').config(['$stateProvider','$urlRouterProvider','$ionicCon
             url: 'statistical',
             templateUrl: "views/statistical/statistical.html"
         })
+        //餐桌设置页
+        .state('table-setting', {
+            url: 'table-setting',
+            templateUrl: "views/table/table-setting.html"
+        })
 }]);
