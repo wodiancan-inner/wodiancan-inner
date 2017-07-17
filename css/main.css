@@ -166,7 +166,9 @@ html {
             display: inline-block;
             font-size: 0.9375rem;
             color: #fff;
-            margin-top: 1.125rem; }
+            width: 7.5rem;
+            height: 3.75rem;
+            line-height: 3.75rem; }
           .ionic-header > div .header-dropdown ul li:hover {
             background: #1e2737; }
       .ionic-header > div .header-dropdown > span {
@@ -190,6 +192,8 @@ html {
 
 .ionic-content {
   margin-top: 3.75rem; }
+  .ionic-content > div {
+    height: 100%; }
 
 .table-nav {
   height: 3.75rem;
@@ -246,14 +250,16 @@ html {
       margin-bottom: 30px; }
 
 .setting-nav {
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
   .setting-nav > nav {
     width: 12.5rem;
     background: #eef1f7;
     color: #444c63;
     border-right: #dee0e0 solid 1px;
     display: inline-block;
-    vertical-align: top; }
+    vertical-align: top;
+    height: 100%; }
     .setting-nav > nav h1 {
       background: #2879ff;
       color: #fff;
@@ -309,5 +315,28 @@ html {
   .setting-nav > div {
     width: calc(100% - 12.5rem);
     float: right; }
+  .setting-nav .all-content {
+    height: 100%; }
+    .setting-nav .all-content .add-group {
+      height: 100%;
+      width: 9.9375rem;
+      display: inline-block;
+      text-align: center;
+      padding-top: 1.25rem;
+      border-right: #dee0e0 solid 1px; }
+      .setting-nav .all-content .add-group > a {
+        display: inline-block;
+        width: 8.6875rem;
+        height: 2.125rem;
+        line-height: 2.125rem;
+        font-size: 1rem;
+        border-radius: 2.125rem;
+        background-color: #8c97b2;
+        color: #fff; }
+        .setting-nav .all-content .add-group > a i {
+          display: inline-block;
+          width: 1.5rem;
+          height: 1.5rem;
+          background: url("../images/GroupAdd.png") center; }
 
 /*# sourceMappingURL=main.css.map */
