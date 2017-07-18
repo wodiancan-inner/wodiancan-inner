@@ -19,32 +19,32 @@ angular.module('myApp').config(['$stateProvider','$urlRouterProvider','$ionicCon
         })
         //点菜页
         .state('order', {
-            url: 'order',
+            url: '/order',
             templateUrl: "views/order/order.html"
         })
         //结账页
         .state('pay', {
-            url: 'pay',
+            url: '/pay',
             templateUrl: "views/pay/pay.html"
         })
         //送餐页
         .state('meals', {
-            url: 'meals',
+            url: '/meals',
             templateUrl:'views/meals/meals.html'
         })
         //订单页
         .state('indent', {
-            url: 'indent',
+            url: '/indent',
             templateUrl: "views/indent/indent.html"
         })
         //统计页
         .state('statistical', {
-            url: 'statistical',
+            url: '/statistical',
             templateUrl: "views/statistical/statistical.html"
         })
         //餐桌设置页
         .state('table-setting', {
-            url: 'table-setting',
+            url: '/table-setting',
             templateUrl: "views/table/table-setting.html"
         })
 }]);

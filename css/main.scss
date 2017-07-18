@@ -13,7 +13,8 @@ html{
  @return ($px/$default-font-size)*1rem;
 }
 .scroll{
-  height: 100%
+  height: 100%;
+  transform: translate3d(0px, -1px, 0px) scale(1) !important;
 }
 //esp
 .esp{
@@ -272,9 +273,9 @@ html{
 .ionic-content{
   margin-top: toRem(60px);
   //height:calc(100% - #{toRem(60px)});
-  >div{
-    height:100%;
-  }
+  //>div{
+  //  height:100%;
+  //}
 }
 
 //table
@@ -346,6 +347,45 @@ html{
       background: #fff;
       margin-left: 30px;
       margin-bottom: 30px;
+      position: relative;
+      text-align: center;
+      >a{
+        width:toRem(160px);
+        height:toRem(140px);
+        font-size: toRem(15px);
+        color:#222;
+        >span{
+          position: absolute;
+          color: #fff;
+          background-color: rgba(105,162,255,0.7);
+          font-size: toRem(12px);
+          border-radius: toRem(6px) 0 toRem(6px) 0;
+          min-width: toRem(40px);
+          top:-2px;
+          left:-2px;
+        }
+        h3,h4{
+          font-size: toRem(18px);
+          font-weight: bold;
+        }
+        h3{
+          color:#333;
+          margin-top: toRem(30px);
+        }
+        h4{
+          color: #69779a;
+          margin-top:toRem(10px);
+        }
+        p{
+          position: absolute;
+          bottom: 0;
+          background-color: #fafafa;
+          border-top: 1px dashed #e9e9e9;
+          font-size: toRem(12px);
+          color:#8c97b2;
+          padding: toRem(4px) 0;
+        }
+      }
     }
   }
 }
@@ -464,11 +504,12 @@ html{
       height:100%;
       width:toRem(159px);
       display: inline-block;
-      text-align: center;
-      padding-top: toRem(20px);
+      vertical-align: top;
+      //text-align: center;
+      padding-top: toRem(26px);
       border-right:#dee0e0 solid 1px;
       >a{
-        display: inline-block;
+        //display: inline-block;
         width: toRem(139px);
         height:toRem(34px);
         line-height: toRem(34px);
@@ -476,12 +517,111 @@ html{
         border-radius: toRem(34px);
         background-color: #8c97b2;
         color: #fff;
+        margin-left:toRem(9px);
+        margin-bottom: toRem(40px);
+        display: flex;
+        align-items: center;
         i{
           display: inline-block;
-          //vertical-align: sub;
+          vertical-align: middle;
           width:toRem(24px);
           height:toRem(24px);
+          margin-left: toRem(15px);
+          background: url('../images/GroupAdd.png') center center;
+        }
+      }
+      ul{
+        padding-left: toRem(20px);
+        li{
+          color: #2879ff;
+          font-weight: bold;
+          font-size: toRem(16px);
+        }
+      }
+    }
+    .add-table{
+      display: inline-block;
+      background: #eef1f7;
+      width:calc(100% - #{toRem(159px)});
+      height:100%;
+      >a{
+        //display: inline-block;
+        width: toRem(139px);
+        height:toRem(34px);
+        line-height: toRem(34px);
+        font-size: toRem(16px);
+        border-radius: toRem(34px);
+        background-color: #2879ff;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        margin-top: toRem(26px);
+        margin-left: toRem(26px);
+        i{
+          display: inline-block;
+          vertical-align: sub;
+          width:toRem(24px);
+          height:toRem(24px);
+          margin-left: toRem(15px);
           background: url('../images/GroupAdd.png') center;
+        }
+      }
+      ul{
+        li{
+          float: left;
+          margin: toRem(28px) 0 0 toRem(26px);
+          background-color: #fff;
+          border: dashed 2px #e2e2e2;
+          border-radius: toRem(6px);
+          text-align: center;
+          width:toRem(160px);
+          height:toRem(140px);
+          position: relative;
+          >a{
+            display: inline-block;
+            color: #222;
+            font-size: toRem(15px);
+            width:toRem(160px);
+            height:toRem(140px);
+            >span{
+              position: absolute;
+              color: #fff;
+              background-color: rgba(105,162,255,0.7);
+              font-size: toRem(12px);
+              border-radius: toRem(6px) 0 toRem(6px) 0;
+              min-width: toRem(40px);
+              top:-2px;
+              left:-2px;
+            }
+            h3{
+              color:#333;
+              font-size: toRem(18px);
+              font-weight: bold;
+              margin-top: toRem(30px);
+            }
+            h4{
+              display: inline-block;
+              background-color: #f2f2f2;
+              color: #999;
+              font-size:toRem(14px);
+              font-weight: bold;
+              padding:toRem(4px) toRem(10px);
+              min-width: toRem(10px);
+              border-radius: toRem(10px);
+              margin-top: toRem(10px);
+            }
+            i{
+              display: inline-block;
+              width:toRem(28px);
+              height:toRem(28px);
+              background: url('../images/TableBox-img.png') no-repeat;
+              background-size: toRem(28px) toRem(28px);
+              position: absolute;
+              bottom: -2px;
+              right:-2px;
+              cursor: pointer;
+            }
+          }
         }
       }
     }
