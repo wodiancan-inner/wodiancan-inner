@@ -628,3 +628,181 @@ html{
   }
 }
 
+
+//order
+.add{
+  background: url('../images/BtnAdd.png') no-repeat;
+  background-size: toRem(30px) toRem(30px);
+}
+.minus{
+  background: url('../images/BtnMinus.png') no-repeat;
+  background-size: toRem(30px) toRem(30px);
+}
+.order{
+  height:100%;
+  .order-left{
+    display: inline-block;
+    vertical-align: top;
+    height:100%;
+    width:toRem(300px);
+    box-shadow: 1px 0 5px 2px #e6e6e6;
+    .table-title{
+      div{
+        display: inline-block;
+        vertical-align: top;
+        width:50%;
+        height:toRem(50px);
+        text-align: center;
+        background: #287aff;
+        line-height:toRem(50px);
+        >span{
+          font-size:toRem(18px);
+          color:#fff;
+        }
+        i{
+          display: inline-block;
+          vertical-align: sub;
+          width:toRem(20px);
+          height:toRem(18px);
+          margin-right:toRem(8px);
+        }
+        &:nth-child(1){
+          i{
+            background: url('../images/TableNameIcon.png') no-repeat;
+            background-size: toRem(20px) toRem(18px);
+          }
+        }
+        &:nth-child(2){
+          i{
+            background: url('../images/TableSwitchIcon.png') no-repeat;
+            background-size: toRem(20px) toRem(18px);
+          }
+        }
+      }
+    }
+    >div{
+      &:nth-child(2){
+        padding: toRem(20px);
+        border-bottom: 1px solid #eee;
+        >span{
+          background: url('../images/menu-number.png') no-repeat;
+          background-size: toRem(28px) toRem(28px);
+          padding-left:toRem(33px);
+          font-size: toRem(18px);
+        }
+        >div{
+          display: inline-block;
+          vertical-align: top;
+          float: right;
+          a{
+            display: inline-block;
+            vertical-align: middle;
+            width:toRem(30px);
+            height:toRem(30px);
+          }
+          >span{
+            margin: 0 toRem(5px);
+          }
+          //.add{
+          //  background: url('../images/BtnAdd.png') no-repeat;
+          //  background-size: toRem(30px) toRem(30px);
+          //}
+          //.minus{
+          //  background: url('../images/BtnMinus.png') no-repeat;
+          //  background-size: toRem(30px) toRem(30px);
+          //}
+        }
+      }
+      &:nth-child(3){
+        background: #fbfbfb;
+        height:toRem(50px);
+        line-height: toRem(50px);
+        border-bottom: 1px solid #e5e5e5;
+        text-align: center;
+        >i{
+          display: inline-block;
+          vertical-align: middle;
+          width:toRem(28px);
+          height:toRem(28px);
+          background: url('../images/note.png') no-repeat;
+          background-size:toRem(28px) toRem(28px);
+        }
+        >span{
+          font-size: toRem(14px);
+        }
+      }
+      &:nth-child(4){
+        background: #f7f9f9;
+        line-height:toRem(48px);
+        height:toRem(48px);
+        >a{
+          width:toRem(48px);
+          height:toRem(48px);
+          display: inline-block;
+        }
+        >p{
+          display: inline-block;
+          vertical-align: top;
+          width:toRem(204px);
+          text-align: center;
+        }
+        .btn-right{
+          float: right;
+          background: url('../images/SmallPageIcon.png') toRem(-44px) toRem(-44px) no-repeat;
+          border-left:1px solid #e8eded;
+        }
+        .btn-left{
+          background: url('../images/SmallPageIcon.png') 0 toRem(-44px) no-repeat;
+          border-right:1px solid #e8eded;
+        }
+      }
+    }
+  }
+  .order-right{
+    display: inline-block;
+    width:calc(100% - #{toRem(300px)});
+    >nav{
+      width:100%;
+      background: #eef1f7;
+      height:toRem(55px);
+      border-bottom: 1px solid #d4d9e3;
+      padding-right: toRem(60px);
+      ul{
+        //width:toRem(1240px);
+        height:toRem(55px);
+        li{
+          text-align: center;
+          float: left;
+          height:toRem(55px);
+          line-height: toRem(55px);
+          width:toRem(120px);
+          font-size: toRem(16px);
+          margin-right: toRem(30px);
+          border-bottom:2px solid transparent;
+          &.active{
+            border-bottom:2px solid #297ef8;
+          }
+        }
+      }
+    }
+  }
+
+  ion-list{
+    ion-item{
+      padding: toRem(15px) toRem(10px) !important;
+      >div{
+        display: inline-block;
+        width:50%;
+      }
+      .item-note{
+        a{
+          display: inline-block;
+          vertical-align: middle;
+          width:toRem(30px);
+          height:toRem(30px);
+        }
+      }
+    }
+  }
+}
+
