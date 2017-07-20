@@ -384,6 +384,15 @@ html{
           font-size: toRem(12px);
           color:#8c97b2;
           padding: toRem(4px) 0;
+          width:100%;
+          i{
+            display: inline-block;
+            width:toRem(12px);
+            height:toRem(12px);
+            background: url('../images/TableBoxnumber.png') no-repeat;
+            background-size: toRem(12px);
+            margin-right: toRem(4px);
+          }
         }
       }
     }
@@ -642,6 +651,7 @@ html{
   height:100%;
   .order-left{
     display: inline-block;
+    position: relative;
     vertical-align: top;
     height:100%;
     width:toRem(300px);
@@ -678,6 +688,31 @@ html{
             background-size: toRem(20px) toRem(18px);
           }
         }
+      }
+    }
+    .order-submit{
+      position: absolute;
+      bottom: 0;
+      height:toRem(122px);
+      width:toRem(300px);
+      padding: toRem(20px);
+      p{
+        font-size: toRem(15px);
+        color:#444c63;
+        text-align: center;
+        font-weight: bold;
+        i{
+          color:#387ef5;
+        }
+        margin-bottom:toRem(10px);
+      }
+      button{
+        width:100%;
+        height:toRem(50px);
+        background:#007AFF;
+        color:#fff;
+        border-radius:3px;
+        font-size:toRem(20px);
       }
     }
     >div{
@@ -750,10 +785,16 @@ html{
           float: right;
           background: url('../images/SmallPageIcon.png') toRem(-44px) toRem(-44px) no-repeat;
           border-left:1px solid #e8eded;
+          &:hover{
+            background: url('../images/SmallPageIcon.png') toRem(-44px) 0 no-repeat;
+          }
         }
         .btn-left{
           background: url('../images/SmallPageIcon.png') 0 toRem(-44px) no-repeat;
           border-right:1px solid #e8eded;
+          &:hover{
+            background: url('../images/SmallPageIcon.png') 0 0 no-repeat;
+          }
         }
       }
     }
@@ -762,6 +803,7 @@ html{
     display: inline-block;
     width:calc(100% - #{toRem(300px)});
     >nav{
+      position: relative;
       width:100%;
       background: #eef1f7;
       height:toRem(55px);
@@ -784,6 +826,15 @@ html{
           }
         }
       }
+      .order-down{
+        position: absolute;
+        right:0;
+        top:toRem(9px);
+        width:toRem(60px);
+        height:toRem(36px);
+        background: url('../images/MenuDown.png') no-repeat center center;
+        border-left:1px solid #d1d6e0;
+      }
     }
   }
 
@@ -792,7 +843,26 @@ html{
       padding: toRem(15px) toRem(10px) !important;
       >div{
         display: inline-block;
+        vertical-align: middle;
         width:50%;
+        &:nth-child(1){
+          h3{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color:#444c63;
+            font-size: toRem(16px);
+            margin-bottom: toRem(10px);
+          }
+          p{
+            color: #999;
+            font-size: 12px;
+          }
+        }
+        &:nth-child(2){
+          text-align: right;
+          margin-top: toRem(10px);
+        }
       }
       .item-note{
         a{
@@ -800,6 +870,84 @@ html{
           vertical-align: middle;
           width:toRem(30px);
           height:toRem(30px);
+          &:nth-child(2){
+            margin: 0 toRem(14px);
+          }
+        }
+        .delete{
+          background: url('../images/BtnDel.png');
+          background-size: toRem(30px) toRem(30px);
+        }
+      }
+    }
+  }
+
+
+  .order-all,.combo,.hot-pot,.secret,.hand,.pizza,.snack,.hot-cakes{
+    padding-top: toRem(16px);
+    >input{
+      width:toRem(140px);
+      padding:0 toRem(12px);
+      margin-left: toRem(20px);
+      height:toRem(36px);
+      line-height: toRem(36px);
+      border-radius: toRem(36px) 0 0 toRem(36px);
+      background: #eef1f7;
+      border: #dadfea solid 1px;
+      color:#111;
+      transition: all 0.3s;
+      &:hover,&:focus{
+        width:toRem(200px);
+      }
+    }
+    >span{
+      display: inline-block;
+      width:toRem(42px);
+      height:toRem(36px);
+      vertical-align: top;
+      background: #297ef8 url('../images/SearchIcon.png') no-repeat center center;
+      border-radius: 0 toRem(36px) toRem(36px) 0;
+      background-size: toRem(16px) toRem(16px);
+    }
+    ul{
+      padding-left: toRem(20px);
+      margin-top: toRem(10px);
+      li{
+        position: relative;
+        width:toRem(220px);
+        height:toRem(80px);
+        margin: toRem(10px) toRem(10px) 0 0;
+        background: #fcfcfc;
+        border: 1px solid #dadfea;
+        border-radius: 4px;
+        padding: toRem(20px);
+        box-shadow: 0 1px 2px #e4e4e4;
+        float: left;
+        h3{
+          color: #444c63;
+          font-weight: 600;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          font-size: toRem(18px);
+          margin-bottom: toRem(6px);
+        }
+        p{
+          color:#999;
+          font-size: toRem(12px);
+          >span{
+            float: right;
+            font-size: toRem(14px);
+          }
+        }
+        >span{
+          position: absolute;
+          display: inline-block;
+          width:toRem(26px);
+          height:toRem(26px);
+          right:0;
+          bottom: 0;
+          background: url('../images/MenuFoodListCheck.png');
         }
       }
     }

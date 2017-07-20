@@ -25,12 +25,12 @@
                         </div><div class="item-note">
                             <a class="add" href=""></a>
                             <a class="minus" href=""></a>
-                            <a href=""></a>
+                            <a class="delete" href=""></a>
                         </div>
                     </ion-item>
                 </ion-list>
-                <div>
-                    <p><i></i><span>共<em>0</em>份</span>账单金额<span>￥<em>0.00</em></span></p>
+                <div class="order-submit">
+                    <p><i class="ion-ios-cart"></i> <span>共<em>0</em>份</span> 账单金额 <span>￥<em>0.00</em></span></p>
                     <button class="button">提交订单</button>
                 </div>
             </div><div class="order-right">
@@ -44,18 +44,129 @@
                         <li switchover>传统披萨</li>
                         <li switchover>美味小食</li>
                         <li switchover>热销榜</li>
-                        <li></li>
                     </ul>
-                    <a href=""></a>
+                    <a class="order-down" href=""></a>
                 </nav>
-                <div>全部内容</div>
-                <div class="esp">套餐内容</div>
-                <div class="esp">火锅内容</div>
-                <div class="esp">棒家秘方</div>
-                <div class="esp">手拍薄底</div>
-                <div class="esp">传统披萨</div>
-                <div class="esp">美味小食</div>
-                <div class="esp">热销榜内容</div>
+                <div class="order-all">
+                    <input placeholder="请输入菜品快捷键"><span></span>
+                    <ul>
+                        <li ng-click="addOrder(isOrder)">
+                            <div>
+                                <h3>香菜末</h3>
+                                <p>快捷码：785638 <span>￥20</span></p>
+                            </div>
+                            <span ng-show="isOrder"></span>
+                        </li> <li>
+                            <div>
+                                <h3>香菜末</h3>
+                                <p>快捷码：785638 <span>￥20</span></p>
+                            </div>
+                            <span></span>
+                        </li> <li>
+                            <div>
+                                <h3>香菜末</h3>
+                                <p>快捷码：785638 <span>￥20</span></p>
+                            </div>
+                            <span></span>
+                        </li> <li>
+                            <div>
+                                <h3>香菜末</h3>
+                                <p>快捷码：785638 <span>￥20</span></p>
+                            </div>
+                            <span></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="esp combo">
+                    <input placeholder="请输入菜品快捷键"><span></span>
+                    <ul>
+                        <li ng-click="addOrder(isOrder)">
+                            <div>
+                                <h3>香菜末</h3>
+                                <p>快捷码：785638 <span>￥20</span></p>
+                            </div>
+                            <span ng-show="isOrder"></span>
+                        </li> <li>
+                        <div>
+                            <h3>香菜末</h3>
+                            <p>快捷码：785638 <span>￥20</span></p>
+                        </div>
+                        <span></span>
+                    </li>
+                    </ul>
+                </div>
+                <div class="esp hot-pot">
+                    <input placeholder="请输入菜品快捷键"><span></span>
+                    <ul>
+                        <li ng-click="addOrder(isOrder)">
+                            <div>
+                                <h3>香菜末</h3>
+                                <p>快捷码：785638 <span>￥20</span></p>
+                            </div>
+                            <span ng-show="isOrder"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="esp secret">
+                    <input placeholder="请输入菜品快捷键"><span></span>
+                    <ul>
+                        <li ng-click="addOrder(isOrder)">
+                            <div>
+                                <h3>香菜末</h3>
+                                <p>快捷码：785638 <span>￥20</span></p>
+                            </div>
+                            <span ng-show="isOrder"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="esp hand">
+                    <input placeholder="请输入菜品快捷键"><span></span>
+                    <ul>
+                        <li ng-click="addOrder(isOrder)">
+                            <div>
+                                <h3>哈哈哈</h3>
+                                <p>快捷码：785638 <span>￥20</span></p>
+                            </div>
+                            <span ng-show="isOrder"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="esp pizza">
+                    <input placeholder="请输入菜品快捷键"><span></span>
+                    <ul>
+                        <li ng-click="addOrder(isOrder)">
+                            <div>
+                                <h3>哈哈哈哈</h3>
+                                <p>快捷码：785638 <span>￥20</span></p>
+                            </div>
+                            <span ng-show="isOrder"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="esp snack">
+                    <input placeholder="请输入菜品快捷键"><span></span>
+                    <ul>
+                        <li ng-click="addOrder(isOrder)">
+                            <div>
+                                <h3>美味</h3>
+                                <p>快捷码：785638 <span>￥20</span></p>
+                            </div>
+                            <span ng-show="isOrder"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="esp hot-cakes">
+                    <input placeholder="请输入菜品快捷键"><span></span>
+                    <ul>
+                        <li ng-click="addOrder(isOrder)">
+                            <div>
+                                <h3>啦啦啦</h3>
+                                <p>快捷码：785638 <span>￥20</span></p>
+                            </div>
+                            <span ng-show="isOrder"></span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </ion-content>

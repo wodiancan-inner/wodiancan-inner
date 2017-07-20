@@ -282,7 +282,15 @@ html {
           border-top: 1px dashed #e9e9e9;
           font-size: 0.75rem;
           color: #8c97b2;
-          padding: 0.25rem 0; }
+          padding: 0.25rem 0;
+          width: 100%; }
+          .table-content ul li > a p i {
+            display: inline-block;
+            width: 0.75rem;
+            height: 0.75rem;
+            background: url("../images/TableBoxnumber.png") no-repeat;
+            background-size: 0.75rem;
+            margin-right: 0.25rem; }
 
 .setting-nav {
   width: 100%;
@@ -471,6 +479,7 @@ html {
   height: 100%; }
   .order .order-left {
     display: inline-block;
+    position: relative;
     vertical-align: top;
     height: 100%;
     width: 18.75rem;
@@ -498,6 +507,27 @@ html {
       .order .order-left .table-title div:nth-child(2) i {
         background: url("../images/TableSwitchIcon.png") no-repeat;
         background-size: 1.25rem 1.125rem; }
+    .order .order-left .order-submit {
+      position: absolute;
+      bottom: 0;
+      height: 7.625rem;
+      width: 18.75rem;
+      padding: 1.25rem; }
+      .order .order-left .order-submit p {
+        font-size: 0.9375rem;
+        color: #444c63;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 0.625rem; }
+        .order .order-left .order-submit p i {
+          color: #387ef5; }
+      .order .order-left .order-submit button {
+        width: 100%;
+        height: 3.125rem;
+        background: #007AFF;
+        color: #fff;
+        border-radius: 3px;
+        font-size: 1.25rem; }
     .order .order-left > div:nth-child(2) {
       padding: 1.25rem;
       border-bottom: 1px solid #eee; }
@@ -549,13 +579,18 @@ html {
         float: right;
         background: url("../images/SmallPageIcon.png") -2.75rem -2.75rem no-repeat;
         border-left: 1px solid #e8eded; }
+        .order .order-left > div:nth-child(4) .btn-right:hover {
+          background: url("../images/SmallPageIcon.png") -2.75rem 0 no-repeat; }
       .order .order-left > div:nth-child(4) .btn-left {
         background: url("../images/SmallPageIcon.png") 0 -2.75rem no-repeat;
         border-right: 1px solid #e8eded; }
+        .order .order-left > div:nth-child(4) .btn-left:hover {
+          background: url("../images/SmallPageIcon.png") 0 0 no-repeat; }
   .order .order-right {
     display: inline-block;
     width: calc(100% - 18.75rem); }
     .order .order-right > nav {
+      position: relative;
       width: 100%;
       background: #eef1f7;
       height: 3.4375rem;
@@ -574,15 +609,101 @@ html {
           border-bottom: 2px solid transparent; }
           .order .order-right > nav ul li.active {
             border-bottom: 2px solid #297ef8; }
+      .order .order-right > nav .order-down {
+        position: absolute;
+        right: 0;
+        top: 0.5625rem;
+        width: 3.75rem;
+        height: 2.25rem;
+        background: url("../images/MenuDown.png") no-repeat center center;
+        border-left: 1px solid #d1d6e0; }
   .order ion-list ion-item {
     padding: 0.9375rem 0.625rem !important; }
     .order ion-list ion-item > div {
       display: inline-block;
+      vertical-align: middle;
       width: 50%; }
+      .order ion-list ion-item > div:nth-child(1) h3 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #444c63;
+        font-size: 1rem;
+        margin-bottom: 0.625rem; }
+      .order ion-list ion-item > div:nth-child(1) p {
+        color: #999;
+        font-size: 12px; }
+      .order ion-list ion-item > div:nth-child(2) {
+        text-align: right;
+        margin-top: 0.625rem; }
     .order ion-list ion-item .item-note a {
       display: inline-block;
       vertical-align: middle;
       width: 1.875rem;
       height: 1.875rem; }
+      .order ion-list ion-item .item-note a:nth-child(2) {
+        margin: 0 0.875rem; }
+    .order ion-list ion-item .item-note .delete {
+      background: url("../images/BtnDel.png");
+      background-size: 1.875rem 1.875rem; }
+  .order .order-all, .order .combo, .order .hot-pot, .order .secret, .order .hand, .order .pizza, .order .snack, .order .hot-cakes {
+    padding-top: 1rem; }
+    .order .order-all > input, .order .combo > input, .order .hot-pot > input, .order .secret > input, .order .hand > input, .order .pizza > input, .order .snack > input, .order .hot-cakes > input {
+      width: 8.75rem;
+      padding: 0 0.75rem;
+      margin-left: 1.25rem;
+      height: 2.25rem;
+      line-height: 2.25rem;
+      border-radius: 2.25rem 0 0 2.25rem;
+      background: #eef1f7;
+      border: #dadfea solid 1px;
+      color: #111;
+      transition: all 0.3s; }
+      .order .order-all > input:hover, .order .order-all > input:focus, .order .combo > input:hover, .order .combo > input:focus, .order .hot-pot > input:hover, .order .hot-pot > input:focus, .order .secret > input:hover, .order .secret > input:focus, .order .hand > input:hover, .order .hand > input:focus, .order .pizza > input:hover, .order .pizza > input:focus, .order .snack > input:hover, .order .snack > input:focus, .order .hot-cakes > input:hover, .order .hot-cakes > input:focus {
+        width: 12.5rem; }
+    .order .order-all > span, .order .combo > span, .order .hot-pot > span, .order .secret > span, .order .hand > span, .order .pizza > span, .order .snack > span, .order .hot-cakes > span {
+      display: inline-block;
+      width: 2.625rem;
+      height: 2.25rem;
+      vertical-align: top;
+      background: #297ef8 url("../images/SearchIcon.png") no-repeat center center;
+      border-radius: 0 2.25rem 2.25rem 0;
+      background-size: 1rem 1rem; }
+    .order .order-all ul, .order .combo ul, .order .hot-pot ul, .order .secret ul, .order .hand ul, .order .pizza ul, .order .snack ul, .order .hot-cakes ul {
+      padding-left: 1.25rem;
+      margin-top: 0.625rem; }
+      .order .order-all ul li, .order .combo ul li, .order .hot-pot ul li, .order .secret ul li, .order .hand ul li, .order .pizza ul li, .order .snack ul li, .order .hot-cakes ul li {
+        position: relative;
+        width: 13.75rem;
+        height: 5rem;
+        margin: 0.625rem 0.625rem 0 0;
+        background: #fcfcfc;
+        border: 1px solid #dadfea;
+        border-radius: 4px;
+        padding: 1.25rem;
+        box-shadow: 0 1px 2px #e4e4e4;
+        float: left; }
+        .order .order-all ul li h3, .order .combo ul li h3, .order .hot-pot ul li h3, .order .secret ul li h3, .order .hand ul li h3, .order .pizza ul li h3, .order .snack ul li h3, .order .hot-cakes ul li h3 {
+          color: #444c63;
+          font-weight: 600;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          font-size: 1.125rem;
+          margin-bottom: 0.375rem; }
+        .order .order-all ul li p, .order .combo ul li p, .order .hot-pot ul li p, .order .secret ul li p, .order .hand ul li p, .order .pizza ul li p, .order .snack ul li p, .order .hot-cakes ul li p {
+          color: #999;
+          font-size: 0.75rem; }
+          .order .order-all ul li p > span, .order .combo ul li p > span, .order .hot-pot ul li p > span, .order .secret ul li p > span, .order .hand ul li p > span, .order .pizza ul li p > span, .order .snack ul li p > span, .order .hot-cakes ul li p > span {
+            float: right;
+            font-size: 0.875rem; }
+        .order .order-all ul li > span, .order .combo ul li > span, .order .hot-pot ul li > span, .order .secret ul li > span, .order .hand ul li > span, .order .pizza ul li > span, .order .snack ul li > span, .order .hot-cakes ul li > span {
+          position: absolute;
+          display: inline-block;
+          width: 1.625rem;
+          height: 1.625rem;
+          right: 0;
+          bottom: 0;
+          background: url("../images/MenuFoodListCheck.png"); }
 
 /*# sourceMappingURL=main.css.map */

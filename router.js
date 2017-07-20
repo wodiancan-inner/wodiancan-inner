@@ -15,12 +15,20 @@ angular.module('myApp').config(['$stateProvider','$urlRouterProvider','$ionicCon
         //桌台页
         .state('table', {
             url: '/table',
-            templateUrl: "views/table/table.html"
+            templateUrl: "views/table/table.html",
+            controller:'tableCtrl'
+
+        })
+        .state('table1', {
+            url: 'table1',
+            templateUrl: "views/table/table.html",
+            controller:'tableCtrl'
         })
         //点菜页
         .state('order', {
             url: '/order',
-            templateUrl: "views/order/order.html"
+            templateUrl: "views/order/order.html",
+            controller:'orderCtrl'
         })
         //结账页
         .state('pay', {
