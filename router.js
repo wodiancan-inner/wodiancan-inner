@@ -33,7 +33,13 @@ angular.module('myApp').config(['$stateProvider','$urlRouterProvider','$ionicCon
         //结账页
         .state('pay', {
             url: '/pay',
-            templateUrl: "views/pay/pay.html"
+            templateUrl: "views/pay/pay.html",
+            controller:'payCtrl'
+        })
+
+        .state('checkout', {
+            url: '/checkout',
+            templateUrl: "views/pay/checkout.html"
         })
         //送餐页
         .state('meals', {
