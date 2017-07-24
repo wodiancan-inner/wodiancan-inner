@@ -885,5 +885,7 @@ html {
         .indent-nav .ineat > nav ul li.active, .indent-nav .take-out > nav ul li.active {
           color: #2879ff;
           border-bottom: 2px solid #297ef8; }
+  .indent-nav .ineat > div, .indent-nav .take-out > div {
+    text-align: left !important; }
 
 /*# sourceMappingURL=main.css.map */

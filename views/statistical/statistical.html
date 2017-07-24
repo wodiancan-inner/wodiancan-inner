@@ -1,10 +1,46 @@
 <ion-view>
     <ion-content class="ionic-content">
-        <p>这是统计页</p>
-        <p>这是统计页</p>
-        <p>这是统计页</p>
-        <p>这是统计页</p>
-        <p>这是统计页</p>
-        <p>这是统计页</p>
+        <div class="indent-nav">
+            <nav>
+                <h1>数据统计</h1>
+                <ul>
+                    <li class="active" switchover><i></i>营业统计<em></em>
+                        <ul>
+                            <li>营业统计</li>
+                            <li>菜品统计</li>
+                            <li>营业日汇总表</li>
+                            <li>营业分餐段日报表</li>
+                        </ul>
+                    </li>
+                    <li switchover><i></i>会员卡统计<em></em>
+                        <ul>
+                            <li>卡信息查询</li>
+                            <li>卡消费记录</li>
+                            <li>卡操作记录</li>
+                            <li>卡操作统计</li>
+                            <li>日结平衡表</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="ineat">
+                <nav>
+                    <ul>
+                        <li class="active" switchover><i></i>已付款订单</li>
+                        <li switchover><i></i>未付款订单</li>
+                    </ul>
+                </nav>
+                <div>已付款订单内容</div>
+                <div class="esp">未付款订单内容</div>
+            </div>
+            <div class="take-out">
+                <nav>
+                    <ul>
+                        <li class="active" switchover><i></i>已完成</li>
+                    </ul>
+                </nav>
+                <div>已完成内容</div>
+            </div>
+        </div>
     </ion-content>
 </ion-view>
